@@ -1,0 +1,9 @@
+SHOW
+
+<%= form_for @project do |f| %>
+  <%= f.label(:name) %>
+  <%= f.text_field(:name) %>
+  <%= f.label(:sproket_ids) %>
+  <%= f.collection_select(:sproket_ids, @sprokets, :id, :name, {}, {multiple: :true}) %>
+  <%= f.submit %>
+  <% end %>

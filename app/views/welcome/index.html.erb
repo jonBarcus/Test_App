@@ -1,0 +1,12 @@
+<h1><%= @project.name %></h1>
+
+<h3>Current Sprokets</h3>
+<% @project.sprokets.each do |p| %>
+  <li><%= p.name %>, rank: <%= p.rank %></li>
+<% end %>
+<h3>Available Sprokets</h3>
+<% @available_sprokets.each do |s| %>
+  <li><%= s.name %>, rank: <%= s.rank %></a></li>
+<% end %>
+
+<a href="/projects/<%=@project.id%>/">Update Project</a>
