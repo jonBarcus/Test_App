@@ -11,7 +11,7 @@ Sproket.delete_all
 
 test_project = Project.create({name: "Test Project"})
 
-sproket_one = Sproket.create({name: "First Sproket", rank: 5})
-sproket_two = Sproket.create({name: "Second Sproket", rank: 3})
-sproket_three = Sproket.create({name: "Third Sproket", rank: 4})
-sproket_four = Sproket.create({name: "Fourth Sproket", rank: 1})
+sproket_one = Sproket.create({name: "First Sproket", rank: 2})
+sproket_two = Sproket.create({name: "Second Sproket", rank: 2})
+sproket_three = Sproket.create({name: "Third Sproket", rank: 2})
+sproket_four = Sproket.create({name: "Fourth Sproket", rank: 2})
