@@ -1,13 +1,13 @@
 class ProjectsController < ApplicationController
 
   def show
-    @project = Project.find_by({id: 1})
+    @project = Project.take
     @sprokets = Sproket.all
   end
 
   def update
 
-    @project = Project.find_by({id: 1})
+    @project = Project.find_by(id: params["id"].to_i)
 
     params["project"]["sproket_ids"].each do |s|
       if s != ""

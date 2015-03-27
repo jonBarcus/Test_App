@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
 
   def index
-    @project = Project.find_by({id: 1})
-    @available_sprokets = Sproket.where(project_id: "")
+    @project = Project.take
+    @available_sprokets = Sproket.where("project_id is null")
   end
 
 
