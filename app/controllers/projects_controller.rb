@@ -11,7 +11,6 @@ class ProjectsController < ApplicationController
 
     params["project"]["sproket_ids"].each do |s|
       if s != ""
-        binding.pry
         @sproket = Sproket.find_by({id: s.to_i})
         @sproket.project_id = params["id"].to_i
         @sproket.save
